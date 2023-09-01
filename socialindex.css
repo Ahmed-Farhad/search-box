@@ -1,0 +1,89 @@
+
+*,*::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+}
+
+:root{
+    --color-white: hsl(252, 30%, 100%);
+    --color-light: hsl(252, 30%, 95%);
+    --color-gray: hsl(253, 14%, 45%);
+    --color-primary: hsl(252, 75%, 60%);
+    --color-secondary: hsl(252, 100%, 90%);
+    --color-success: hsl(120, 95%, 65%);
+    --color-danger: hsl(0, 95%, 65%);
+    --color-dark: hsl(252, 30%, 17%);
+    --color-black: hsl(252, 30%, 10%);
+
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn-padding: 0.6rem 2rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding: 1rem;
+
+    --stk-top-left: 5.4rem;
+    --stk-top-right: -18rem;
+}
+
+body{
+     background: var(--color-gray);
+}
+
+.container{
+    color: white;
+    padding: 10px;
+    margin: 10px auto;
+    width: 450px;
+    border-radius: var(--card-border-radius);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bigun{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 27px;
+}
+
+.container input[type='text']{
+    width: 430px;
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+    padding: 7px;
+    font-size: 15px;
+    background: var(--color-white);
+    
+}
+
+.container input[type='text']:hover{
+    border: 2px solid var(--color-danger);
+}
+.container .players ul{
+    background: #E9E9EA;
+}
+
+.container .players ul li{
+   font-size: 20px;
+   padding: 5px 10px;
+   padding-left: 60px;
+   transition: all ease .2s;
+   border: .2px solid black;
+}
+
+.container .players ul li:hover{
+   background: white;
+    
+}
+
+.container .players ul li a{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
